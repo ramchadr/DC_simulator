@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polar & Bipolar Line Encoding</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Polar & Bipolar Line Encoding</h1>
+
+    <p>Digital Communication Simulator</p>
+
+    <h2>Enter Your Message</h2>
+
+    <input type="text" id="message" placeholder="Enter your message">
+
+    <h2>Select Encoding</h2>
+
+    <select id="encoding">
+        <option value="nrz-l">Polar NRZ-L</option>
+        <option value="nrz-i">Polar NRZ-I</option>
+        <option value="rz">Polar RZ</option>
+        <option value="manchester">Manchester</option>
+        <option value="ami">Bipolar AMI</option>
+        <option value="pseudoternary">Pseudoternary</option>
+    </select>
+
+    <br><br>
+
+    <button id="encodeButton">Encode</button>
+
+    <h2>Binary Data</h2>
+
+    <p id="binaryOutput">Your binary data will appear here.</p>
+    <h2 id="encodingTitle">Encoded Signal</h2>
+    <canvas id="waveform" width="800" height="330"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
